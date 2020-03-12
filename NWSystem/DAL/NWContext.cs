@@ -18,6 +18,8 @@ namespace NWSystem.DAL
 
         }
         public DbSet<Region> Regions { get; set; }
+        public DbSet<Category> Categories { get; set; }
+        public DbSet<Product> Products { get; set; }
 
     }
 }
