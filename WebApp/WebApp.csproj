@@ -126,6 +126,7 @@
     <Content Include="Content\Site.css" />
     <Content Include="Default.aspx" />
     <Content Include="ExercisePages\ExerciseHome.aspx" />
+    <Content Include="ExercisePages\ReceivingPage.aspx" />
     <Content Include="ExercisePages\SimpleQuery.aspx" />
     <Content Include="ExercisePages\SqlQueryNiceGrid.aspx" />
     <Content Include="ExercisePages\SqlQueryPlainGrid.aspx" />
@@ -305,6 +306,13 @@
     </Compile>
     <Compile Include="ExercisePages\ExerciseHome.aspx.designer.cs">
       <DependentUpon>ExerciseHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExercisePages\ReceivingPage.aspx.cs">
+      <DependentUpon>ReceivingPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExercisePages\ReceivingPage.aspx.designer.cs">
+      <DependentUpon>ReceivingPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="ExercisePages\SimpleQuery.aspx.cs">
       <DependentUpon>SimpleQuery.aspx</DependentUpon>

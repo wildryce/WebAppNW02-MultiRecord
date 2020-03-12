@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="SqlQueryNiceGrid.aspx.cs" Inherits="WebApp.ExercisePages.SqlQueryNiceGrid" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-    <h1> Using SqlQuery: non pkey queries</h1>
+    <h1> Using SqlQuery: Custom GridView</h1>
     <div class="offset-2">
         <asp:Label ID="Label1" runat="server" Text="Select a Category: "></asp:Label>&nbsp;&nbsp;   
         <asp:DropDownList ID="CategoryList" runat="server"></asp:DropDownList>&nbsp;&nbsp;
@@ -17,8 +17,8 @@
             <Columns>
                 <asp:CommandField SelectText="View" ShowSelectButton="True" 
                     ButtonType="Button" CausesValidation="false"></asp:CommandField>
-                <asp:TemplateField HeaderText="ID" Visible="False">
-                    <ItemStyle HorizontalAlign="Center"></ItemStyle>
+                <asp:TemplateField HeaderText="ID" Visible="True">
+                    <ItemStyle HorizontalAlign="Left"></ItemStyle>
                     <ItemTemplate>
                         <asp:Label ID="ProductID" runat="server" 
                             Text='<%# Eval("ProductID") %>'></asp:Label>
@@ -45,7 +45,7 @@
                 <asp:TemplateField HeaderText="Price ($)">
                     <HeaderStyle HorizontalAlign="Right"></HeaderStyle>
 
-                    <ItemStyle HorizontalAlign="Right"></ItemStyle>
+                    <ItemStyle HorizontalAlign="Left"></ItemStyle>
                      <ItemTemplate>
                         <asp:Label ID="UnitPrice" runat="server" 
                             Text='<%# string.Format("{0:0.00}",Eval("UnitPrice"))%>'></asp:Label>
@@ -53,7 +53,7 @@
                     </ItemTemplate>
                 </asp:TemplateField>
                 <asp:TemplateField HeaderText="Disc">
-                    <ItemStyle HorizontalAlign="Center"></ItemStyle>
+                    <ItemStyle HorizontalAlign="Left"></ItemStyle>
                      <ItemTemplate>
                          <asp:CheckBox ID="Discontinued" runat="server" 
                               Checked='<%# Eval("Discontinued") %>'/>
