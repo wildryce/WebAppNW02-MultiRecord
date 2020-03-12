@@ -70,6 +70,16 @@
                                             style="color:black" runat="server">
                                             Simple PKey Query
                                     </a>
+                                    <a class="dropdown-item"
+                                            href="~/ExercisePages/SqlQueryPlainGrid.aspx"
+                                            style="color:black" runat="server">
+                                            Sql Query Plain Grid
+                                    </a>
+                                    <a class="dropdown-item"
+                                            href="~/ExercisePages/SqlQueryNiceGrid.aspx"
+                                            style="color:black" runat="server">
+                                            Sql Query Nice Grid
+                                    </a>
                                 </div>
                             </li>
                             <li class="nav-item">
