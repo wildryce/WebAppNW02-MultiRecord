@@ -11,7 +11,7 @@ namespace WebApp.ExercisePages
 {
 
 
-    public partial class SqlQueryNiceGrid
+    public partial class SqlQueryNiceGridYesNav
     {
 
         /// <summary>

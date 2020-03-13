@@ -7,12 +7,15 @@ using System.Threading.Tasks;
 
 using NWSystem.DAL;
 using NWSystem.ENTITIES;
+using System.ComponentModel; //ODS
 
 namespace NWSystem.BLL
 {
+    [DataObject]
     public class ProductController
     {
         //using SqlQuery to do non primary key lookups
+        [DataObjectMethod(DataObjectMethodType.Select, false)]
         public List<Product> Products_FindByCategory(int categoryid)
         {
             using (var context = new NWContext())

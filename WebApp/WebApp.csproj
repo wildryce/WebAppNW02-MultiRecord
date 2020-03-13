@@ -126,9 +126,10 @@
     <Content Include="Content\Site.css" />
     <Content Include="Default.aspx" />
     <Content Include="ExercisePages\ExerciseHome.aspx" />
+    <Content Include="ExercisePages\MultiRecordODS.aspx" />
     <Content Include="ExercisePages\ReceivingPage.aspx" />
     <Content Include="ExercisePages\SimpleQuery.aspx" />
-    <Content Include="ExercisePages\SqlQueryNiceGrid.aspx" />
+    <Content Include="ExercisePages\SqlQueryNiceGridYesNav.aspx" />
     <Content Include="ExercisePages\SqlQueryPlainGrid.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
@@ -307,6 +308,13 @@
     <Compile Include="ExercisePages\ExerciseHome.aspx.designer.cs">
       <DependentUpon>ExerciseHome.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ExercisePages\MultiRecordODS.aspx.cs">
+      <DependentUpon>MultiRecordODS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExercisePages\MultiRecordODS.aspx.designer.cs">
+      <DependentUpon>MultiRecordODS.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ExercisePages\ReceivingPage.aspx.cs">
       <DependentUpon>ReceivingPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -321,12 +329,12 @@
     <Compile Include="ExercisePages\SimpleQuery.aspx.designer.cs">
       <DependentUpon>SimpleQuery.aspx</DependentUpon>
     </Compile>
-    <Compile Include="ExercisePages\SqlQueryNiceGrid.aspx.cs">
-      <DependentUpon>SqlQueryNiceGrid.aspx</DependentUpon>
+    <Compile Include="ExercisePages\SqlQueryNiceGridYesNav.aspx.cs">
+      <DependentUpon>SqlQueryNiceGridYesNav.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="ExercisePages\SqlQueryNiceGrid.aspx.designer.cs">
-      <DependentUpon>SqlQueryNiceGrid.aspx</DependentUpon>
+    <Compile Include="ExercisePages\SqlQueryNiceGridYesNav.aspx.designer.cs">
+      <DependentUpon>SqlQueryNiceGridYesNav.aspx</DependentUpon>
     </Compile>
     <Compile Include="ExercisePages\SqlQueryPlainGrid.aspx.cs">
       <DependentUpon>SqlQueryPlainGrid.aspx</DependentUpon>

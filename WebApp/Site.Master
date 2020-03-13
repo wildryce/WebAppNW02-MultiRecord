@@ -76,9 +76,14 @@
                                             Sql Query Plain Grid
                                     </a>
                                     <a class="dropdown-item"
-                                            href="~/ExercisePages/SqlQueryNiceGrid.aspx"
+                                            href="~/ExercisePages/SqlQueryNiceGridYesNav.aspx"
                                             style="color:black" runat="server">
-                                            Sql Query Nice Grid
+                                            Sql Query Nice Grid with Navigation
+                                    </a>
+                                    <a class="dropdown-item"
+                                            href="~/ExercisePages/MultiRecordODS.aspx"
+                                            style="color:black" runat="server">
+                                            Multi Record with ODS
                                     </a>
                                 </div>
                             </li>

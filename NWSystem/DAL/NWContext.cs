@@ -4,10 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-#region Additional Namespaces
 using System.Data.Entity; //inheritance of DbContext from EntityFramework
 using NWSystem.ENTITIES;
-#endregion
 
 namespace NWSystem.DAL
 {
@@ -20,6 +18,7 @@ namespace NWSystem.DAL
         public DbSet<Region> Regions { get; set; }
         public DbSet<Category> Categories { get; set; }
         public DbSet<Product> Products { get; set; }
+        public DbSet<Supplier> Suppliers { get; set; }
 
     }
 }

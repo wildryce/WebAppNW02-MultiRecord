@@ -16,7 +16,7 @@ namespace WebApp.ExercisePages
                 string pid = Request.QueryString["pid"];
                 if (string.IsNullOrEmpty(pid))
                 {
-                    Response.Redirect("SqlQueryNiceGrid.aspx");
+                    Response.Redirect("SqlQueryNiceGridYesNav.aspx");
                 }
                 else
                 {
@@ -28,7 +28,7 @@ namespace WebApp.ExercisePages
 
         protected void Back_Click(object sender, EventArgs e)
         {
-            Response.Redirect("SqlQueryNiceGrid.aspx");
+            Response.Redirect("SqlQueryNiceGridYesNav.aspx");
         }
     }
 }

@@ -10,7 +10,7 @@ using NWSystem.ENTITIES;
 
 namespace WebApp.ExercisePages
 {
-    public partial class SqlQueryNiceGrid : System.Web.UI.Page
+    public partial class SqlQueryNiceGridYesNav : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

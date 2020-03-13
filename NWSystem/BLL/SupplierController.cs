@@ -6,21 +6,27 @@ using System.Threading.Tasks;
 
 using NWSystem.DAL;
 using NWSystem.ENTITIES;
-using System.ComponentModel; //needed to expose class and methods to ODS wizard
+using System.ComponentModel;
 
 namespace NWSystem.BLL
 {
-    //expose the class to the ObjectDataSource wizard
     [DataObject]
-    public class CategoryController
+    public class SupplierController
     {
-        //expose a method to ODS
         [DataObjectMethod(DataObjectMethodType.Select, false)]
-        public List<Category> Categories_List()
+        public List<Supplier> Supplier_List()
         {
             using (var context = new NWContext())
             {
-                return context.Categories.ToList();
+                return context.Suppliers.ToList();
+            }
+        }
+
+        public Supplier Supplier_Get(int supplierid)
+        {
+            using (var context = new NWContext())
+            {
+                return context.Suppliers.Find(supplierid);
             }
         }
     }

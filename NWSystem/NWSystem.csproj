@@ -55,10 +55,12 @@
     <Compile Include="BLL\CategoryController.cs" />
     <Compile Include="BLL\ProductController.cs" />
     <Compile Include="BLL\RegionController.cs" />
+    <Compile Include="BLL\SupplierController.cs" />
     <Compile Include="DAL\NWContext.cs" />
     <Compile Include="ENTITIES\Category.cs" />
     <Compile Include="ENTITIES\Product.cs" />
     <Compile Include="ENTITIES\Region.cs" />
+    <Compile Include="ENTITIES\Supplier.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

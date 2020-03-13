@@ -1,6 +1,6 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="SqlQueryNiceGrid.aspx.cs" Inherits="WebApp.ExercisePages.SqlQueryNiceGrid" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="SqlQueryNiceGridYesNav.aspx.cs" Inherits="WebApp.ExercisePages.SqlQueryNiceGridYesNav" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-    <h1> Using SqlQuery: Custom GridView</h1>
+        <h1> Using SqlQuery: Custom GridView with Navigation</h1>
     <div class="offset-2">
         <asp:Label ID="Label1" runat="server" Text="Select a Category: "></asp:Label>&nbsp;&nbsp;   
         <asp:DropDownList ID="CategoryList" runat="server"></asp:DropDownList>&nbsp;&nbsp;
