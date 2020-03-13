@@ -7,14 +7,15 @@ using System.Threading.Tasks;
 
 using NWSystem.DAL;
 using NWSystem.ENTITIES;
-using System.ComponentModel; //ODS
+using System.ComponentModel; //needed to expose class and methods to ODS wizard
 
 namespace NWSystem.BLL
 {
+    //expose the class to the ObjectDataSource wizard
     [DataObject]
     public class ProductController
     {
-        //using SqlQuery to do non primary key lookups
+        //expose a method to ODS
         [DataObjectMethod(DataObjectMethodType.Select, false)]
         public List<Product> Products_FindByCategory(int categoryid)
         {
