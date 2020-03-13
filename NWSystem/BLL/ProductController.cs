@@ -7,16 +7,11 @@ using System.Threading.Tasks;
 
 using NWSystem.DAL;
 using NWSystem.ENTITIES;
-using System.ComponentModel; //needed to expose class and methods to ODS wizard
 
 namespace NWSystem.BLL
 {
-    //expose the class to the ObjectDataSource wizard
-    [DataObject]
     public class ProductController
     {
-        //expose a method to ODS
-        [DataObjectMethod(DataObjectMethodType.Select, false)]
         public List<Product> Products_FindByCategory(int categoryid)
         {
             using (var context = new NWContext())

@@ -125,10 +125,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Default.aspx" />
-    <Content Include="ExercisePages\ExerciseHome.aspx" />
-    <Content Include="ExercisePages\MultiRecordODS.aspx" />
     <Content Include="ExercisePages\ReceivingPage.aspx" />
-    <Content Include="ExercisePages\SingleRecordQuery.aspx" />
     <Content Include="ExercisePages\MultiRecordQueryWithCustomGridView.aspx" />
     <Content Include="ExercisePages\MultiRecordQueryWithDefaultGridView.aspx" />
     <Content Include="favicon.ico" />
@@ -301,33 +298,12 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
-    <Compile Include="ExercisePages\ExerciseHome.aspx.cs">
-      <DependentUpon>ExerciseHome.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="ExercisePages\ExerciseHome.aspx.designer.cs">
-      <DependentUpon>ExerciseHome.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="ExercisePages\MultiRecordODS.aspx.cs">
-      <DependentUpon>MultiRecordODS.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="ExercisePages\MultiRecordODS.aspx.designer.cs">
-      <DependentUpon>MultiRecordODS.aspx</DependentUpon>
-    </Compile>
     <Compile Include="ExercisePages\ReceivingPage.aspx.cs">
       <DependentUpon>ReceivingPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="ExercisePages\ReceivingPage.aspx.designer.cs">
       <DependentUpon>ReceivingPage.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="ExercisePages\SingleRecordQuery.aspx.cs">
-      <DependentUpon>SingleRecordQuery.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="ExercisePages\SingleRecordQuery.aspx.designer.cs">
-      <DependentUpon>SingleRecordQuery.aspx</DependentUpon>
     </Compile>
     <Compile Include="ExercisePages\MultiRecordQueryWithCustomGridView.aspx.cs">
       <DependentUpon>MultiRecordQueryWithCustomGridView.aspx</DependentUpon>

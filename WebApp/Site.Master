@@ -60,16 +60,7 @@
                                         ExercisePages
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarSubMenu">
-                                    <a class="dropdown-item"
-                                            href="~/ExercisePages/ExerciseHome.aspx"
-                                            style="color:black" runat="server">
-                                            ExerciseHome
-                                    </a>
-                                    <a class="dropdown-item"
-                                            href="~/ExercisePages/SingleRecordQuery.aspx"
-                                            style="color:black" runat="server">
-                                            Single Record PK Query
-                                    </a>
+                                    
                                     <a class="dropdown-item"
                                             href="~/ExercisePages/MultiRecordQueryWithDefaultGridView.aspx"
                                             style="color:black" runat="server">
@@ -80,11 +71,7 @@
                                             style="color:black" runat="server">
                                             Multi Record Query with Custom GridView
                                     </a>
-                                    <a class="dropdown-item"
-                                            href="~/ExercisePages/MultiRecordODS.aspx"
-                                            style="color:black" runat="server">
-                                            Multi Record Query with ODS
-                                    </a>
+                                    
                                 </div>
                             </li>
                             <li class="nav-item">
