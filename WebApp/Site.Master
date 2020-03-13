@@ -66,24 +66,24 @@
                                             ExerciseHome
                                     </a>
                                     <a class="dropdown-item"
-                                            href="~/ExercisePages/SimpleQuery.aspx"
+                                            href="~/ExercisePages/SingleRecordQuery.aspx"
                                             style="color:black" runat="server">
-                                            Simple PKey Query
+                                            Single Record PK Query
                                     </a>
                                     <a class="dropdown-item"
-                                            href="~/ExercisePages/SqlQueryPlainGrid.aspx"
+                                            href="~/ExercisePages/MultiRecordQueryWithDefaultGridView.aspx"
                                             style="color:black" runat="server">
-                                            Sql Query Plain Grid
+                                            Multi Record Query with Default GridView
                                     </a>
                                     <a class="dropdown-item"
-                                            href="~/ExercisePages/SqlQueryNiceGridYesNav.aspx"
+                                            href="~/ExercisePages/MultiRecordQueryWithCustomGridView.aspx"
                                             style="color:black" runat="server">
-                                            Sql Query Nice Grid with Navigation
+                                            Multi Record Query with Custom GridView
                                     </a>
                                     <a class="dropdown-item"
                                             href="~/ExercisePages/MultiRecordODS.aspx"
                                             style="color:black" runat="server">
-                                            Multi Record with ODS
+                                            Multi Record Query with ODS
                                     </a>
                                 </div>
                             </li>

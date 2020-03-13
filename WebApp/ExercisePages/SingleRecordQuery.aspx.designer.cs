@@ -11,26 +11,17 @@ namespace WebApp.ExercisePages
 {
 
 
-    public partial class SqlQueryPlainGrid
+    public partial class SingleRecordQuery
     {
 
         /// <summary>
-        /// Label1 control.
+        /// RegionIDArg control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label1;
-
-        /// <summary>
-        /// CategoryList control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList CategoryList;
+        protected global::System.Web.UI.WebControls.TextBox RegionIDArg;
 
         /// <summary>
         /// Fetch control.
@@ -51,12 +42,21 @@ namespace WebApp.ExercisePages
         protected global::System.Web.UI.WebControls.Label MessageLabel;
 
         /// <summary>
-        /// ProductList control.
+        /// RegionID control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView ProductList;
+        protected global::System.Web.UI.WebControls.Label RegionID;
+
+        /// <summary>
+        /// RegionDescription control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label RegionDescription;
     }
 }

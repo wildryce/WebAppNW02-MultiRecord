@@ -1,6 +1,6 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="SqlQueryPlainGrid.aspx.cs" Inherits="WebApp.ExercisePages.SqlQueryPlainGrid" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="MultiRecordQueryWithDefaultGridView.aspx.cs" Inherits="WebApp.ExercisePages.MultiRecordQueryWithDefaultGridView" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-    <h1> Using SqlQuery: Plain GridView</h1>
+    <h1> Multi Record Query with Default GridView</h1>
     <div class="offset-2">
         <asp:Label ID="Label1" runat="server" Text="Select a Category: "></asp:Label>&nbsp;&nbsp;   
         <asp:DropDownList ID="CategoryList" runat="server"></asp:DropDownList>&nbsp;&nbsp;

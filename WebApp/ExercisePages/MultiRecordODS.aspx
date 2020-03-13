@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="MultiRecordODS.aspx.cs" Inherits="WebApp.ExercisePages.MultiRecordODS" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <div class="page-header">
-        <h1>Product MultiRecord Object DataSource</h1>
+        <h1>MultiRecord Query with Object DataSource (ODS)</h1>
     </div>
 
     <div class="row col-md-12">

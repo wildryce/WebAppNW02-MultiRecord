@@ -11,7 +11,7 @@ namespace WebApp.ExercisePages
 {
 
 
-    public partial class SqlQueryNiceGridYesNav
+    public partial class MultiRecordQueryWithDefaultGridView
     {
 
         /// <summary>

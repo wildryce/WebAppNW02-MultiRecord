@@ -128,9 +128,9 @@
     <Content Include="ExercisePages\ExerciseHome.aspx" />
     <Content Include="ExercisePages\MultiRecordODS.aspx" />
     <Content Include="ExercisePages\ReceivingPage.aspx" />
-    <Content Include="ExercisePages\SimpleQuery.aspx" />
-    <Content Include="ExercisePages\SqlQueryNiceGridYesNav.aspx" />
-    <Content Include="ExercisePages\SqlQueryPlainGrid.aspx" />
+    <Content Include="ExercisePages\SingleRecordQuery.aspx" />
+    <Content Include="ExercisePages\MultiRecordQueryWithCustomGridView.aspx" />
+    <Content Include="ExercisePages\MultiRecordQueryWithDefaultGridView.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\bootstrap.bundle.js" />
@@ -322,26 +322,26 @@
     <Compile Include="ExercisePages\ReceivingPage.aspx.designer.cs">
       <DependentUpon>ReceivingPage.aspx</DependentUpon>
     </Compile>
-    <Compile Include="ExercisePages\SimpleQuery.aspx.cs">
-      <DependentUpon>SimpleQuery.aspx</DependentUpon>
+    <Compile Include="ExercisePages\SingleRecordQuery.aspx.cs">
+      <DependentUpon>SingleRecordQuery.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="ExercisePages\SimpleQuery.aspx.designer.cs">
-      <DependentUpon>SimpleQuery.aspx</DependentUpon>
+    <Compile Include="ExercisePages\SingleRecordQuery.aspx.designer.cs">
+      <DependentUpon>SingleRecordQuery.aspx</DependentUpon>
     </Compile>
-    <Compile Include="ExercisePages\SqlQueryNiceGridYesNav.aspx.cs">
-      <DependentUpon>SqlQueryNiceGridYesNav.aspx</DependentUpon>
+    <Compile Include="ExercisePages\MultiRecordQueryWithCustomGridView.aspx.cs">
+      <DependentUpon>MultiRecordQueryWithCustomGridView.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="ExercisePages\SqlQueryNiceGridYesNav.aspx.designer.cs">
-      <DependentUpon>SqlQueryNiceGridYesNav.aspx</DependentUpon>
+    <Compile Include="ExercisePages\MultiRecordQueryWithCustomGridView.aspx.designer.cs">
+      <DependentUpon>MultiRecordQueryWithCustomGridView.aspx</DependentUpon>
     </Compile>
-    <Compile Include="ExercisePages\SqlQueryPlainGrid.aspx.cs">
-      <DependentUpon>SqlQueryPlainGrid.aspx</DependentUpon>
+    <Compile Include="ExercisePages\MultiRecordQueryWithDefaultGridView.aspx.cs">
+      <DependentUpon>MultiRecordQueryWithDefaultGridView.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="ExercisePages\SqlQueryPlainGrid.aspx.designer.cs">
-      <DependentUpon>SqlQueryPlainGrid.aspx</DependentUpon>
+    <Compile Include="ExercisePages\MultiRecordQueryWithDefaultGridView.aspx.designer.cs">
+      <DependentUpon>MultiRecordQueryWithDefaultGridView.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

@@ -16,7 +16,7 @@ namespace WebApp.ExercisePages
                 string pid = Request.QueryString["pid"];
                 if (string.IsNullOrEmpty(pid))
                 {
-                    Response.Redirect("SqlQueryNiceGridYesNav.aspx");
+                    Response.Redirect("MultiRecordQueryWithCustomGridView.aspx");
                 }
                 else
                 {
@@ -28,7 +28,7 @@ namespace WebApp.ExercisePages
 
         protected void Back_Click(object sender, EventArgs e)
         {
-            Response.Redirect("SqlQueryNiceGridYesNav.aspx");
+            Response.Redirect("MultiRecordQueryWithCustomGridView.aspx");
         }
     }
 }

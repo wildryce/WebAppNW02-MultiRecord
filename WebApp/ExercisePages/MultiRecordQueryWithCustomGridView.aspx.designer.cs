@@ -11,17 +11,26 @@ namespace WebApp.ExercisePages
 {
 
 
-    public partial class SimpleQuery
+    public partial class MultiRecordQueryWithCustomGridView
     {
 
         /// <summary>
-        /// RegionIDArg control.
+        /// Label1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox RegionIDArg;
+        protected global::System.Web.UI.WebControls.Label Label1;
+
+        /// <summary>
+        /// CategoryList control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList CategoryList;
 
         /// <summary>
         /// Fetch control.
@@ -42,21 +51,12 @@ namespace WebApp.ExercisePages
         protected global::System.Web.UI.WebControls.Label MessageLabel;
 
         /// <summary>
-        /// RegionID control.
+        /// ProductList control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label RegionID;
-
-        /// <summary>
-        /// RegionDescription control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label RegionDescription;
+        protected global::System.Web.UI.WebControls.GridView ProductList;
     }
 }
