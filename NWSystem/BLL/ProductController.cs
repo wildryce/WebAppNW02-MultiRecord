@@ -16,17 +16,6 @@ namespace NWSystem.BLL
         {
             using (var context = new NWContext())
             {
-                //syntax
-                //context.Database.SqlQuery<T>("sqlprocname [@parameterid[,@parameterid, ...]]"
-                //      [, new SqlParameter("parameterid", value)[, new SqlParameter("parameterid",value)]]);
-                //examples
-                //context.Database.SqlQuery<T>("sqlprocname");  no parameters
-                //context.Database.SqlQuery<T>("sqlprocname @parameterid"
-                //      , new SqlParameter("parameterid", value)); one parameter
-                //context.Database.SqlQuery<T>("sqlprocname @parameterid,@parameterid"
-                //      , new SqlParameter("parameterid", value), new SqlParameter("parameterid",value)); +1> parameters
-
-                //the return datatype of this query is IEnumerable<T>
                 IEnumerable<Product> results =
                     context.Database.SqlQuery<Product>("Products_GetByCategories @CategoryID"
                         , new SqlParameter("CategoryID", categoryid));
