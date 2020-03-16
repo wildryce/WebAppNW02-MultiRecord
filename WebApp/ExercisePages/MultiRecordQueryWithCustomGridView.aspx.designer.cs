@@ -24,13 +24,13 @@ namespace WebApp.ExercisePages
         protected global::System.Web.UI.WebControls.Label Label1;
 
         /// <summary>
-        /// CategoryList control.
+        /// List01 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList CategoryList;
+        protected global::System.Web.UI.WebControls.DropDownList List01;
 
         /// <summary>
         /// Fetch control.
@@ -51,12 +51,12 @@ namespace WebApp.ExercisePages
         protected global::System.Web.UI.WebControls.Label MessageLabel;
 
         /// <summary>
-        /// ProductList control.
+        /// List02 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView ProductList;
+        protected global::System.Web.UI.WebControls.GridView List02;
     }
 }

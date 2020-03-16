@@ -55,13 +55,10 @@
     <Compile Include="BLL\Controller01.cs" />
     <Compile Include="BLL\Controller02.cs" />
     <Compile Include="BLL\Controller03.cs" />
-    <Compile Include="BLL\Controller04.cs" />
-    <Compile Include="Class1.cs" />
     <Compile Include="DAL\Context.cs" />
     <Compile Include="ENTITIES\Entity01.cs" />
     <Compile Include="ENTITIES\Entity02.cs" />
     <Compile Include="ENTITIES\Entity03.cs" />
-    <Compile Include="ENTITIES\Entity04.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

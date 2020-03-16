@@ -9,14 +9,28 @@ using System.ComponentModel.DataAnnotations;
 
 namespace DBSystem.ENTITIES
 {
-    [Table("Categories")]
+    [Table("Products")]
     public class Entity02
     {
         [Key]
-        public int CategoryID { get; set; }
-        public string CategoryName { get; set; }
-        public string Description { get; set; }
-        public byte[] Picture { get; set; }
-        public string PictureMimeType { get; set; }
+        public int ProductID { get; set; }
+        public string ProductName { get; set; }
+        public int? SupplierID { get; set; }
+        public int? CategoryID { get; set; }
+        public string QuantityPerUnit { get; set; }
+        public decimal? UnitPrice { get; set; }
+        public Int16? UnitsInStock { get; set; }
+        public Int16? UnitsOnOrder { get; set; }
+        public Int16? ReorderLevel { get; set; }
+        public bool Discontinued { get; set; }
+
+        [NotMapped]
+        public string ProductandID
+        {
+            get
+            {
+                return ProductName + "(" + ProductID + ")";
+            }
+        }
     }
 }

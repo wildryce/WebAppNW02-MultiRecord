@@ -9,27 +9,30 @@ using System.ComponentModel.DataAnnotations;
 
 namespace DBSystem.ENTITIES
 {
-    [Table("Products")]
+    [Table("Suppliers")]
     public class Entity03
     {
         [Key]
-        public int ProductID { get; set; }
-        public string ProductName { get; set; }
-        public int? SupplierID { get; set; }
-        public int? CategoryID { get; set; }
-        public string QuantityPerUnit { get; set; }
-        public decimal? UnitPrice { get; set; }
-        public Int16? UnitsInStock { get; set; }
-        public Int16? UnitsOnOrder { get; set; }
-        public Int16? ReorderLevel { get; set; }
-        public bool Discontinued { get; set; }
+        public int SupplierID { get; set; }
+        public string CompanyName { get; set; }
+        public string ContactName { get; set; }
+        public string ContactTitle { get; set; }
+        public string Address { get; set; }
+        public string City { get; set; }
+        public string Region { get; set; }
+        public string PostalCode { get; set; }
+        public string Country { get; set; }
+        public string Phone { get; set; }
+        public string Fax { get; set; }
+        public string HomePageTitle { get; set; }
+        public string HomePageUrl { get; set; }
 
         [NotMapped]
-        public string ProductandID
+        public string CompanyAddress
         {
             get
             {
-                return ProductName + "(" + ProductID + ")";
+                return Address + " " + City + " " + PostalCode;
             }
         }
     }

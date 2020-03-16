@@ -2,17 +2,17 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
         <h1> Multi Record Query with Custom GridView</h1>
     <div class="offset-2">
-        <asp:Label ID="Label1" runat="server" Text="Select a Category: "></asp:Label>&nbsp;&nbsp;   
-        <asp:DropDownList ID="CategoryList" runat="server"></asp:DropDownList>&nbsp;&nbsp;
+        <asp:Label ID="Label1" runat="server" Text="Select an Item: "></asp:Label>&nbsp;&nbsp;   
+        <asp:DropDownList ID="List01" runat="server"></asp:DropDownList>&nbsp;&nbsp;
         <asp:Button ID="Fetch" runat="server" Text="Fetch" 
              CausesValidation="false" OnClick="Fetch_Click"/>
         <br /><br />
         <asp:Label ID="MessageLabel" runat="server" ></asp:Label>
         <br />
-        <asp:GridView ID="ProductList" runat="server" 
+        <asp:GridView ID="List02" runat="server" 
             AutoGenerateColumns="False"
              CssClass="table table-striped" GridLines="Horizontal"
-             BorderStyle="None" AllowPaging="True" OnPageIndexChanging="ProductList_PageIndexChanging" PageSize="5" OnSelectedIndexChanged="ProductList_SelectedIndexChanged">
+             BorderStyle="None" AllowPaging="True" OnPageIndexChanging="List02_PageIndexChanging" PageSize="5" OnSelectedIndexChanged="List02_SelectedIndexChanged">
 
             <Columns>
                 <asp:CommandField SelectText="View" ShowSelectButton="True" 

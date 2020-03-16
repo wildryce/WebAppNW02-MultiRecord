@@ -17,34 +17,31 @@ namespace WebApp.ExercisePages
             MessageLabel.Text = "";
             if (!Page.IsPostBack)
             {
-                BindCategoryList();
+                BindList();
             }
         }
-
-        protected void BindCategoryList()
+        protected void BindList()
         {
             try
             {
-                Controller02 sysmgr = new Controller02();
-                List<Entity02> info = null;
+                Controller01 sysmgr = new Controller01();
+                List<Entity01> info = null;
                 info = sysmgr.List();
                 info.Sort((x, y) => x.CategoryName.CompareTo(y.CategoryName));
-                CategoryList.DataSource = info;
-                CategoryList.DataTextField = nameof(Entity02.CategoryName);
-                CategoryList.DataValueField = nameof(Entity02.CategoryID);
-                CategoryList.DataBind();
-                CategoryList.Items.Insert(0, "select...");
-
+                List01.DataSource = info;
+                List01.DataTextField = nameof(Entity01.CategoryName);
+                List01.DataValueField = nameof(Entity01.CategoryID);
+                List01.DataBind();
+                List01.Items.Insert(0, "select...");
             }
             catch (Exception ex)
             {
                 MessageLabel.Text = ex.Message;
             }
         }
-
         protected void Fetch_Click(object sender, EventArgs e)
         {
-            if (CategoryList.SelectedIndex == 0)
+            if (List01.SelectedIndex == 0)
             {
                 MessageLabel.Text = "Select a category to view its products";
             }
@@ -52,12 +49,12 @@ namespace WebApp.ExercisePages
             {
                 try
                 {
-                    Controller03 sysmgr = new Controller03();
-                    List<Entity03> info = null;
-                    info = sysmgr.FindByEntity02ID(int.Parse(CategoryList.SelectedValue));
+                    Controller02 sysmgr = new Controller02();
+                    List<Entity02> info = null;
+                    info = sysmgr.FindByID(int.Parse(List01.SelectedValue));
                     info.Sort((x, y) => x.ProductName.CompareTo(y.ProductName));
-                    ProductList.DataSource = info;
-                    ProductList.DataBind();
+                    List02.DataSource = info;
+                    List02.DataBind();
                 }
                 catch (Exception ex)
                 {
@@ -65,16 +62,14 @@ namespace WebApp.ExercisePages
                 }
             }
         }
-
-        protected void ProductList_PageIndexChanging(object sender, GridViewPageEventArgs e)
+        protected void List02_PageIndexChanging(object sender, GridViewPageEventArgs e)
         {
-            ProductList.PageIndex = e.NewPageIndex;
+            List02.PageIndex = e.NewPageIndex;
             Fetch_Click(sender, new EventArgs());
         }
-
-        protected void ProductList_SelectedIndexChanged(object sender, EventArgs e)
+        protected void List02_SelectedIndexChanged(object sender, EventArgs e)
         {
-            GridViewRow agvrow = ProductList.Rows[ProductList.SelectedIndex];
+            GridViewRow agvrow = List02.Rows[List02.SelectedIndex];
             string productid = (agvrow.FindControl("ProductID") as Label).Text;
             Response.Redirect("ReceivingPage.aspx?pid=" + productid);
         }
