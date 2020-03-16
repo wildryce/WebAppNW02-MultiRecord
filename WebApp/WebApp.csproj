@@ -366,10 +366,6 @@
     <TypeScriptCompile Include="Scripts\index.d.ts" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\NWSystem\NWSystem.csproj">
-      <Project>{59d2b826-e8cf-42fb-a248-84039daa8276}</Project>
-      <Name>NWSystem</Name>
-    </ProjectReference>
     <ProjectReference Include="..\System\DBSystem.csproj">
       <Project>{546fd104-9eea-4e07-a903-bc5601811785}</Project>
       <Name>DBSystem</Name>
