@@ -5,8 +5,8 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-using NWSystem.BLL;
-using NWSystem.ENTITIES;
+using DBSystem.BLL;
+using DBSystem.ENTITIES;
 
 namespace WebApp.ExercisePages
 {
@@ -17,52 +17,44 @@ namespace WebApp.ExercisePages
             MessageLabel.Text = "";
             if (!Page.IsPostBack)
             {
-                BindCategoryList();
+                BindList();
             }
         }
-
-        protected void BindCategoryList()
+        protected void BindList()
         {
-            //standard lookup
             try
             {
-                CategoryController sysmgr = new CategoryController();
-                List<Category> info = null;
-                info = sysmgr.Categories_List();
+                Controller01 sysmgr = new Controller01();
+                List<Entity01> info = null;
+                info = sysmgr.List();
                 info.Sort((x, y) => x.CategoryName.CompareTo(y.CategoryName));
-                CategoryList.DataSource = info;
-                CategoryList.DataTextField = nameof(Category.CategoryName);
-                CategoryList.DataValueField = nameof(Category.CategoryID);
-                CategoryList.DataBind();
-                CategoryList.Items.Insert(0, "select...");
-
+                List01.DataSource = info;
+                List01.DataTextField = nameof(Entity01.CategoryName);
+                List01.DataValueField = nameof(Entity01.CategoryID);
+                List01.DataBind();
+                List01.Items.Insert(0, "select...");
             }
             catch (Exception ex)
             {
                 MessageLabel.Text = ex.Message;
             }
         }
-
         protected void Fetch_Click(object sender, EventArgs e)
         {
-            if (CategoryList.SelectedIndex == 0)
+            if (List01.SelectedIndex == 0)
             {
                 MessageLabel.Text = "Select a category to view its products";
             }
             else
             {
-                //standard lookup
                 try
                 {
-                    ProductController sysmgr = new ProductController();
-                    List<Product> info = null;
-                    info = sysmgr.Products_FindByCategory(int.Parse(CategoryList.SelectedValue));
+                    Controller02 sysmgr = new Controller02();
+                    List<Entity02> info = null;
+                    info = sysmgr.FindByID(int.Parse(List01.SelectedValue));
                     info.Sort((x, y) => x.ProductName.CompareTo(y.ProductName));
-                    ProductList.DataSource = info;
-
-                    ProductList.DataBind();
-
-
+                    List02.DataSource = info;
+                    List02.DataBind();
                 }
                 catch (Exception ex)
                 {
