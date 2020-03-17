@@ -366,7 +366,7 @@
     <TypeScriptCompile Include="Scripts\index.d.ts" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\System\DBSystem.csproj">
+    <ProjectReference Include="..\DBSystem\DBSystem.csproj">
       <Project>{546fd104-9eea-4e07-a903-bc5601811785}</Project>
       <Name>DBSystem</Name>
     </ProjectReference>
