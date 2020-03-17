@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.29709.97
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApp", "WebApp\WebApp.csproj", "{62B57E7D-D878-4EDD-8201-E77695428940}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBSystem", "System\DBSystem.csproj", "{546FD104-9EEA-4E07-A903-BC5601811785}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBSystem", "DBSystem\DBSystem.csproj", "{546FD104-9EEA-4E07-A903-BC5601811785}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
