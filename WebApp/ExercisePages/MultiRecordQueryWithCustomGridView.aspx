@@ -10,11 +10,12 @@
 
         <asp:Label ID="MessageLabel" runat="server" ></asp:Label>
         <br />
+    </div>
 
-        <asp:GridView ID="List02" runat="server" 
+    <asp:GridView ID="List02" runat="server" 
             AutoGenerateColumns="False"
-             CssClass="table table-striped" GridLines="Horizontal"
-             BorderStyle="None" AllowPaging="True" OnPageIndexChanging="List02_PageIndexChanging" PageSize="5" OnSelectedIndexChanged="List02_SelectedIndexChanged">
+             CssClass="table table-bordered" GridLines="Horizontal"
+             BorderStyle="Solid" AllowPaging="True" OnPageIndexChanging="List02_PageIndexChanging" PageSize="5" OnSelectedIndexChanged="List02_SelectedIndexChanged">
 
             <Columns>
                 <asp:TemplateField HeaderText="Player Name">
@@ -54,7 +55,6 @@
             <EmptyDataTemplate>
                 This team has no players or does not exist.
             </EmptyDataTemplate>
-            <PagerSettings FirstPageText="Start" LastPageText="End" Mode="NumericFirstLast" PageButtonCount="3" />
+            <PagerSettings Mode="NumericFirstLast" PageButtonCount="10"/>
         </asp:GridView>
-    </div>
 </asp:Content>
